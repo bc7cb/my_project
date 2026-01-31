@@ -317,3 +317,17 @@ function showAlert(message, type) {
 }
 
 
+
+if (tasks.length === 0) {
+    tasks = [
+        { id: 1, text: 'مراجعة مشروع HTML وCSS', completed: true, createdAt: new Date().toISOString() },
+        { id: 2, text: 'تعلم JavaScript متقدم', completed: false, createdAt: new Date().toISOString() },
+        { id: 3, text: 'تصميم واجهة مستخدم جديدة', completed: false, createdAt: new Date().toISOString() },
+        { id: 4, text: 'رفع المشروع على GitHub', completed: false, createdAt: new Date().toISOString() }
+    ];
+    saveTasks();
+}
+
+document.addEventListener('DOMContentLoaded', initApp);
+
+
