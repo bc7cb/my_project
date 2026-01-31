@@ -254,3 +254,9 @@ function updateStats() {
 }
 
 
+// حفظ المهام في التخزين المحلي
+function saveTasks() {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
+
+
